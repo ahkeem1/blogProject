@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Times, serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #008080; /*keep in mind to possibly change*/
+}
+header{
+	background-color: white;
+	padding: 10px;
+}
+header h1{
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+	margin: 3.5 0px;
+}
+
+#row:after{
+	content: '';
+	display: table;
+	clear: both;
+
+}
+
+.leftColumn{
+	float:left;
+	width: 70%;
+
+}
+
+.rightColumn{
+	width: 30%;
+	float:right;
+	padding-left: 20px;
+}
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+	margin-top: 25px;
+}
+
+.brook{
+	width: 50%;
+}
+.plant{
+	width: 50%;
+}
+.rock{
+	width: 50%;
+}
+.me{
+	width: 20%;
+}
+
+footer{
+	background-color: #dddddd;
+	padding: 40px;
+	text-anchor: center;
+	margin-top: 20px;
+} 
+
+/*making it responsive */
+@media(max-width: 800px){
+	.leftColumn, .rightColumn{
+		width: 100%;
+		padding: 20px;
+	}
+}
